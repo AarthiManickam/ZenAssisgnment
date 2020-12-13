@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+ 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+       <style>
+           *{
+               
+            font-family: 'Barlow', sans-serif;
+            font-weight: bold;
+           }
+            .icon {
+                    padding: 10px;
+                    background: grey;
+                    color: black;
+                    min-width: 10px;
+                    
+                    
+                    
+                }
+            .input-field {
+                    width: 100%;
+                    padding: 10px;
+                    outline: none;
+                    
+                }
+                .input-container {
+                    display: -ms-flexbox; /* IE10 */
+                    display: flex;
+                    width: 70%;
+                    margin-left: 90px;
+                    
+                    
+                    
+                }
+                table {
+                    border-collapse: collapse;
+                    align-self: center;
+                    width:700px;
+                    background-color:lightgray;
+                   margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                    
+                    
+                }
+                table, td, th {
+                /* border: 1px solid black; */
+                
+               
+                
+                }
+                .col2{
+                    width: 400px;
+                }
+                .col1
+                {
+                    
+                    width:300px;
+                }
+                .text
+                {
+                    padding-left: 50px;
+                    font-weight: bolder;
+                    color: black;
+                }
+                .headertext
+                {
+                    padding-left: 250px;
+                    font-size: larger;
+                    
+                }
+                
+                
+               
+
+
+        </style>
+
+    </head>
+    <body>
+        <form method="POST" id="myForm" action="#" onSubmit="alert('Thank you for submitting form.'); " >
+            <div id="reg" class="container">
+            <table cellspacing="0" cellpadding="7" >
+                <tr>
+                    <td colspan="2">
+                        <label class="headertext">FORM REGISTRATION TASK</label>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">
+                        <label class="text">Full Name</label>
+                    </td>
+                    <td class="col2" colspan="2"  >
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" placeholder="Full Name" name="Fullname" required>
+                          </div>
+                    </td>
+                    <tr>
+                        <td class="col1" >
+                            <label class="text">Address Line1</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-address-book icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="Address Line1" name="Adline1" required>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">Address Line2</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-address-book icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="Address Line2" name="Adline2">
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">City</label>
+                        </td>
+                        <td class="col2" >
+                            <div class="input-container">
+                                <i class="fa fa-building-o icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="City" name="City">
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">State/Provice/Region</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="Region" name="Region">
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">PostalCode/Zip</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-envelope-o icon" aria-hidden="true"></i>
+                                <input class="input-field" type="text" placeholder="PostalCode/Zip" name="Pincode" required>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">Country</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-map-o icon" aria-hidden="true"></i>
+                                <select id="Country" name="Country" class="input-field" placeholder="Country">
+                    
+                                    <OPTION VALUE="1" >Afghanisthan</OPTION>
+                                    <OPTION VALUE="2" >India</OPTION>
+                                    <OPTION VALUE="3" >Australia</OPTION>
+                                    <OPTION VALUE="4" >Singapore</OPTION>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">Email</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="email" placeholder="Email" name="Email">
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col1">
+                            <label class="text">Phone Number</label>
+                        </td>
+                        <td class="col2" colspan="2" >
+                            <div class="input-container">
+                                <i class="fa fa-user icon"></i>
+                                <input class="input-field" type="tel" placeholder="Format: 123-456-67890" name="Number"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                              </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" style="margin-left:250px" value="Submit">
+                        </td>
+                    </tr>
+            </table>
+        </div>
+        </form>
+        <!-- <script>
+            function submit() {
+              alert("The form is submitted");
+            }
+            </script> -->
+    </body>
+</html>
